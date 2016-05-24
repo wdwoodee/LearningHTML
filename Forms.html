@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Form Test</title>
+</head>
+<body>
+<!--method有两个值：get和post。get的方式是将表单控件的name/value信息经过编码之后，
+通过URL发送(你可以在地址栏里看到)。而post则将表单的内容通过http发送，你在地址栏看不
+到表单的提交信息。那什么时候用get，什么时候用post呢？一般是这样来判断的，如果只是为
+取得和显示数据，用get；一旦涉及数据的保存和更新，那么建议用post。-->
+<form  action="http://www.admin5.com/html/asdocs/html_tutorials/yourname.asp" method="get">
+    请输入你的姓名：
+    <input type="text" name="yourname">
+    <input type="submit" value="提交">
+</form>
+<form action = "http://www.admin5.com/html/asdocs/html_tutorials/choose.asp" method = "post">
+    <input type="checkbox" name="fruit" value ="apple" >苹果<br>
+    <input type="checkbox" name="fruit" value ="orange">桔子<br>
+    <input type="checkbox" name="fruit" value ="mango">芒果<br>
+    <input type="submit" value="提交">
+</form>
+<form action = "http://www.admin5.com/html/asdocs/html_tutorials/choose.asp" method = "post">
+    <input type="radio" name="fruit" value = "Apple">苹果<br>
+    <input type="radio" name="fruit" value = "Orange">桔子<br>
+    <input type="radio" name="fruit" value = "Mango">芒果<br>
+    <input type="submit" value="提交">
+</form>
+<form action = "http://www.admin5.com/html/asdocs/html_tutorials/choose.asp" method = "post">
+    你最喜欢的水果是：
+    <select name="fruit" size="1" multiple>
+        <option value="apple">苹果
+        <option value="orange">桔子
+        <option value="mango">芒果
+    </select>
+    <input type="submit" value="提交">
+</form>
+<form  action="http://www.admin5.com/html/asdocs/html_tutorials/suggest.asp" method="get">
+    请提宝贵意见：<br>
+    <textarea name="yoursuggest" cols ="50" rows = "3"></textarea>
+    <br>
+    <input type="submit" value="提交">
+</form>
+<form  action="http://www.admin5.com/html/asdocs/html_tutorials/userpw.asp" method="post">
+    请输入你的姓名：
+    <input type="text" name="yourname"><br>
+    请输入你的密码：
+    <input type="password" name="yourpw"><br>
+    <input type="submit" value="提交">
+</form>
+<form  action="http://www.admin5.com/html/asdocs/html_tutorials/yourname.asp" method="get">
+    请输入你的姓名：
+    <input type="text" name="yourname"><br>
+    <input type="image" src ="images/xiaomao.gif"
+           alt = "提交" NAME="imagesubmit">
+</form>
+
+</body>
+</html>
