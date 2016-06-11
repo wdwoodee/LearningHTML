@@ -31,10 +31,25 @@
 </form>
 <form action = "http://www.admin5.com/html/asdocs/html_tutorials/choose.asp" method = "post">
     你最喜欢的水果是：
-    <select name="fruit" size="1" multiple>
+    <p>List box</p>
+    <select name="fruit" size="3" multiple="multiple">
         <option value="apple">苹果
         <option value="orange">桔子
         <option value="mango">芒果
+    </select><br/>
+    <p>Combobox</p>
+    <select name="学历">
+        <option value="xiaoxue">小学</option>
+        <option value="zhognxue">中学</option>
+        <option value="daxue" selected="selected">大学</option>
+    </select>
+    <p>Option group</p>
+    <select>
+        <optgroup label="zhongguo">中国</optgroup>
+        <option>北京</option>
+        <option>上海</option>
+        <optgroup label="riben">日本</optgroup>
+        <option>大阪</option>
     </select>
     <input type="submit" value="提交">
 </form>
@@ -42,6 +57,7 @@
     请提宝贵意见：<br>
     <textarea name="yoursuggest" cols ="50" rows = "3"></textarea>
     <br>
+    <textarea name="yoursuggest2" cols ="50" rows = "3">初值</textarea>
     <input type="submit" value="提交">
 </form>
 <form  action="http://www.admin5.com/html/asdocs/html_tutorials/userpw.asp" method="post">
@@ -56,6 +72,22 @@
     <input type="text" name="yourname"><br>
     <input type="image" src ="images/xiaomao.gif"
            alt = "提交" NAME="imagesubmit">
+</form>
+
+<form>
+    <p>Label的使用</p>
+    姓名：<input type="text"/>
+    婚否：<input type="checkbox"/>
+    <br/>
+    <label for="name">姓名：</label><input type="text" id="name"/>
+    <label for="ma">婚否：</label><input type="checkbox" id="ma"/>
+
+    <fieldset>
+        <legend>常用</legend>
+        <input type="text"/>
+        <input type="text"/>
+        <input type="text"/>
+    </fieldset>
 </form>
 
 </body>
